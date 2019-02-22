@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/MQuery.js"></script>
+</head>
+<style type="text/css">
+	div {width: 100px;height: 100px;background-color: #847699;}
+</style>
+<body>
+	<div></div>
+	<ul>
+		<li>11</li>
+		<li>22</li>
+		<li>33</li>
+		<li>44</li>
+	</ul>
+	<script type="text/javascript">
+		$(function() {
+			// $('div').on('click',function() {
+			// 	alert('click');
+			// })
+
+			// $('div').on('click mouseover mouseout',function() {
+			// 	console.log('mouseover mouseout')
+			// })
+
+			// $('div').on({
+			// 	'click':function() {
+			// 		console.log('click');
+			// 	},
+			// 	'mouseover': function() {
+			// 		console.log('mouseover');
+			// 	},
+			// 	'mouseout': function() {
+			// 		console.log('mouseout');
+			// 	}
+			// })
+			$('ul').on('click','li',function(ev) {
+				alert('事件委托')
+			})
+		})
+	</script>
+</body>
+</html>

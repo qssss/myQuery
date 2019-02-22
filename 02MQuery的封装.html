@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/MQuery.js"></script>
+</head>
+<body>
+	<div class="div1"></div>
+	<div name='hello' id="hello"></div>
+	<div class="div1"></div>
+	<div class="div1"></div>
+	<ul>
+		<li name='hello'></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<script type="text/javascript">
+		$(function() {
+			console.log('页面加载完毕')
+			console.log($('#hello'));
+			console.log($('.div1'));
+			console.log($('div'));
+			console.log($('[name=hello]'));
+			console.log($('body'));
+		})
+	</script>
+</body>
+</html>

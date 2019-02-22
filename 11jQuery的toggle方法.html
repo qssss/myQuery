@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+</head>
+<style type="text/css">
+	input {display: block;}
+	div {display: block;margin: 50px;width: 100px;height: 100px;background: #986709;}
+</style>
+<body>
+	<input type="button" name="" value="点我">
+	<div></div>
+	<script type="text/javascript">
+		$(function() {
+			$('input').toggle(function() {
+				$('div').css('backgroundColor','red')
+			},function() {
+				$('div').css('backgroundColor','blue')
+			},function() {
+				$('div').css('backgroundColor','yellow')
+			})
+		})
+	</script>
+</body>
+</html>

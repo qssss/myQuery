@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/MQuery.js"></script>
+</head>
+<style type="text/css">
+	div {width: 100px;height: 100px;margin: 50px;}
+	.div1 {background: red;}
+	.div2 {background: blue;}
+</style>
+<body>
+	<script type="text/javascript">
+		$(function() {
+			$('div').click(function() {
+				this.style.backgroundColor = 'orange';
+			})
+			$('div').mouseover(function() {
+				this.style.backgroundColor = 'blue';
+			})
+			$('div').mouseout(function() {
+				this.style.backgroundColor = 'green';
+			})
+		})
+	</script>
+	<div class="div1"></div>
+	<div class="div2"></div>
+</body>
+</html>

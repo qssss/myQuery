@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/MQuery.js"></script>
+</head>
+<style type="text/css">
+	div {width: 100px;height: 100px;margin: 50px;}
+	.div1 {background: red;}
+	.div2 {background: blue;}
+</style>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+	<script type="text/javascript">
+		$(function() {
+			$('div').hover(function() {
+				this.style.backgroundColor = '#546784';
+			},function() {
+				this.style.backgroundColor = '#235645';
+			})
+		})
+	</script>
+</body>
+</html>

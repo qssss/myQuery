@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+</head>
+<style type="text/css">
+	div {width: 100px;height: 100px;background-color: #847699;}
+</style>
+<body>
+	<div></div>
+	<script type="text/javascript">
+		$(function() {
+			$('div').on('click',function() {
+				alert('click');
+			})
+
+			// $('div').on('mouseover mouseout',function() {
+			// 	alert('mouseover mouseout')
+			// })
+
+			// $('div').on({
+			// 	'click':function() {
+			// 		console.log('click');
+			// 	},
+			// 	'mouseover': function() {
+			// 		console.log('mouseover');
+			// 	},
+			// 	'mouseout': function() {
+			// 		console.log('mouseout');
+			// 	}
+			// })
+
+			$(document).on('click','div',function() {
+				alert('事件委托')
+			})
+		})
+	</script>
+</body>
+</html>
